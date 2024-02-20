@@ -26,7 +26,7 @@ import (
 // CONSOLE MESSAGES
 
 const (
-	versionCmd     = "pub v0.1.4\n"
+	versionCmd     = "pub v0.1.5\n"
 	versionDefault = "0.0.0"
 	versionErr     = "Invalid version: %s\n"
 	versionNew     = "New version: %s\n"
