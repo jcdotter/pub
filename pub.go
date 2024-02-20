@@ -22,13 +22,6 @@ import (
 	"strings"
 )
 
-// TODO:
-// full github repo has to be published to go proxy
-// so, can't version modules in subdirectories
-// 0xjgo    github.com/jcdotter/go-pub
-// 			github.com/jcdotter/go-test
-// 0xjpy
-
 // ----------------------------------------------------------------------------
 // CONSOLE MESSAGES
 
