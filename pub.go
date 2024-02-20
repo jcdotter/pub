@@ -26,7 +26,7 @@ import (
 // CONSOLE MESSAGES
 
 const (
-	versionCmd     = "pub v0.1.3\n"
+	versionCmd     = "pub v0.1.4\n"
 	versionDefault = "0.0.0"
 	versionErr     = "Invalid version: %s\n"
 	versionNew     = "New version: %s\n"
@@ -52,7 +52,7 @@ const (
 	gitAdd     = "git add ."
 	gitCom     = "git commit -m 'v%s'"
 	gitTag     = "git tag v%s"
-	gitPush    = "git push"
+	gitPush    = "git push origin main"
 	gitPushOrg = "git push origin v%s"
 	gitAddErr  = "ERROR. Could not add files to git.\n"
 	gitComErr  = "ERROR. Could not commit changes.\n"
