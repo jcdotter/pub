@@ -26,7 +26,7 @@ import (
 // CONSOLE MESSAGES
 
 const (
-	versionCmd     = "pub v0.1.2\n"
+	versionCmd     = "pub v0.1.3\n"
 	versionDefault = "0.0.0"
 	versionErr     = "Invalid version: %s\n"
 	versionNew     = "New version: %s\n"
@@ -52,7 +52,8 @@ const (
 	gitAdd     = "git add ."
 	gitCom     = "git commit -m 'v%s'"
 	gitTag     = "git tag v%s"
-	gitPush    = "git push origin v%s"
+	gitPush    = "git push"
+	gitPushOrg = "git push origin v%s"
 	gitAddErr  = "ERROR. Could not add files to git.\n"
 	gitComErr  = "ERROR. Could not commit changes.\n"
 	gitTagErr  = "ERROR. Could not tag version.\n"
@@ -136,7 +137,8 @@ func gitCommit(version string) {
 	Command(gitAddErr, gitAdd)
 	Command(gitComErr, gitCom, version)
 	Command(gitTagErr, gitTag, version)
-	Command(gitPushErr, gitPush, version)
+	Command(gitPushErr, gitPushOrg, version)
+	Command(gitPushErr, gitPush)
 	Console(done)
 }
 
