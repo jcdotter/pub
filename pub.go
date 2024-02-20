@@ -26,13 +26,13 @@ import (
 // CONSOLE MESSAGES
 
 const (
-	versionCmd     = "pub v0.1.0\n"
+	versionCmd     = "pub v0.1.2\n"
 	versionDefault = "0.0.0"
 	versionErr     = "Invalid version: %s\n"
 	versionNew     = "New version: %s\n"
 	pubInit        = "Preparing to publish.\nParsing go.mod file: "
 	pubUpdate      = "Updating go.mod file: "
-	pubComplete    = "your module has been published.\n"
+	pubComplete    = "Your module has been published.\n"
 	modParseErr    = "ERROR. Ensure you are in the correct directory and have a go.mod file.\n"
 	modUpdateErr   = "ERROR. Could not update go.mod file.\n"
 	modDone        = "done. (module: %s, version: %s)\n"
